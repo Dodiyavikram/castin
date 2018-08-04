@@ -1,0 +1,976 @@
+body{
+	font-family: 'Avenir', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+    font-style: normal;
+    font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+	outline: none !important;
+}
+/*----------- Sign Up Page CSS Start ------------*/
+.main_bg{
+	background: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 60px 15px;
+}
+.signup_outer{
+	text-align: center;
+	width: 100%;
+}
+.closebtn {
+    position: absolute;
+    right: 45px;
+	top: 45px;
+    z-index: 1;
+    cursor: pointer;
+}
+.signup_outer h2{
+	font-size: 67px;
+	font-family: 'Avenir 85';
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 55px;
+	-webkit-text-shadow:13px 0px 25px rgba(0,0,0,0.28);
+	-moz-text-shadow:13px 0px 25px rgba(0,0,0,0.28);
+	text-shadow:13px 0px 25px rgba(0,0,0,0.28);
+	margin-top: 7px;
+}
+.form_control{
+	height: 48px;
+	border: 0px;
+	padding: 0px 26px;
+	border-radius: 30px;
+	margin-bottom: 28px;
+	outline: none !important;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+}
+.form_control::placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.form_control:-ms-input-placeholder { 
+    color: #333333;
+}
+.form_control::-ms-input-placeholder { 
+    color: #333333;
+}
+.form_control.last{
+	padding-right: 50px;
+}
+.form_input{
+	position: relative;
+	max-width: 420px;
+	margin: 0 auto;
+}
+.form_input img{
+	position: absolute;
+	right: 21px;
+	top: 14px;
+}
+.btn_pink:focus, .btn_pink.focus {
+    -webkit-box-shadow: 0px 3px 9px #e27feb;
+	-moz-box-shadow: 0px 3px 9px #e27feb;
+	box-shadow: 0px 3px 9px #e27feb;
+}
+.btn_pink{
+	border: 0px;
+	height: 46px;
+	width: 140px;
+	line-height: 44px;
+	outline: none;
+	border-radius: 40px;
+	padding: 0px;
+	font-size: 22px;
+	color: #fff !important;
+	background: #f85ab6;
+	margin-top: 68px;
+	-webkit-box-shadow: 0px 3px 9px #e27feb;
+	-moz-box-shadow: 0px 3px 9px #e27feb;
+	box-shadow: 0px 3px 9px #e27feb;
+}
+.btn_pink:hover{
+	background: #dd2891;
+}
+.form_input .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+	height: 48px;
+	border: 0px;
+	padding: 0px 50px 0px 26px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+	font-family: 'Avenir', sans-serif;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+}
+.inputfile-6 + label span {
+    width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+    line-height: 48px;
+    text-align: left;
+}
+/*----------- Sign Up Page CSS End ------------*/
+/*----------- Login Page CSS Start ------------*/
+.login_bg{
+	background: url(../images/login_background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+	height: 847px;
+	width: 100%;
+	padding: 4px 30px;
+}
+.logo{
+	text-align: center;
+	margin-top: -33px;
+}
+.login_top_bar{
+    text-align: right;
+}
+.login_top_bar a{
+	color: #fff;
+	color :#ffffff;
+	font-size: 22px;
+	font-family: 'Avenir', sans-serif;
+}
+.login_form{
+	max-width: 340px;
+	margin: 194px auto 0px;
+}
+.login_input{
+	position: relative;
+}
+.login_input img{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+.login_control{
+	height: 50px;
+	border: 0px;
+	padding: 0px 20px 0px 64px;
+	border-radius: 30px;
+	margin-bottom: 52px;
+	outline: none !important;
+	width: 100%;
+	background: rgba(255,255,255,0.7);
+	font-size: 22px;
+	font-family: 'Avenir', sans-serif;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+}
+.login_input .btn_pink{
+	margin: 151px auto 0px;
+	font-size: 22px;
+	display: block;
+	padding-left: 4px;
+	background: rgba(248,90,182,0.9);
+}
+.login_input .btn_pink:hover{
+	background: #dd2891;
+}
+.forgot_pass{
+	font-size: 20px;
+	font-style: italic;
+	color: #333333 !important;
+	margin-top: 16px;
+	display: inline-block;
+	letter-spacing: 0.7px;
+	margin-left: 12px;
+	margin-bottom: 74px;
+}
+/*----------- Login Page CSS End ------------*/
+/*----------- Model Page CSS Start ------------*/
+.model_bg{
+	background: url(../images/model_background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+	height: 855px;
+	width: 100%;
+	padding: 15px;
+}
+.model_bg .logo{
+	margin-top: -2px;
+}
+.model_bg .logo img{
+	width: 319px;
+}
+.title{
+	text-align: center;
+	margin-top: 77px;
+}
+.title h3{
+	color: #fff;
+	font-size: 36px;
+	letter-spacing: 0.4px;
+}
+.model_list ul{
+	text-align: center;
+}
+.model_list li{
+	display: inline-block;
+	width: 349px;
+	margin: 10px 99px 0px;
+}
+.model_list a{
+	display: block;
+}
+.model_img{
+	border-radius: 50%;
+	border: 10px solid #fff;
+}
+.model_list img{
+	width: 329px;
+	height: 329px;
+	border-radius: 50%;
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+.model_list li p{
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff !important;
+	margin-top: 16px;
+}
+.model_list li a.active .model_img,.model_list li a:hover .model_img{
+	border-color: #f85ab6;
+	-webkit-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+	box-shadow: 0px 13px 25px rgba(0,0,0,0.2);
+}
+.model_btn{
+	text-align: center;
+}
+.model_btn .btn_pink{
+	margin-top: 77px;
+	line-height: 46px;
+}
+/*----------- Model Page CSS End ------------*/
+/*----------- Edit Profile Page CSS Start ------------*/
+.edit_profile{
+	background: #9fd5ff;
+	background: -moz-linear-gradient(top, #9fd5ff 0%, #b4acfa 100%);
+	background: -webkit-linear-gradient(top, #9fd5ff 0%,#b4acfa 100%);
+	background: linear-gradient(to bottom, #9fd5ff 0%,#b4acfa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fd5ff', endColorstr='#b4acfa',GradientType=0 );
+	min-height: 1000px;
+	padding: 40px 15px 50px;
+}
+.edit_profile h2 {
+    font-size: 67px;
+    font-family: 'Avenir 85';
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 47px;
+    -webkit-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+    -moz-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+    text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+    margin-top: 7px;
+    text-align: center;
+}
+.profile_image{
+	position: relative;
+}
+.avatar-upload {
+	position: relative;
+	max-width: 171px;
+	margin: 0px auto;
+}
+.avatar-upload .avatar-edit {
+	position: absolute;
+	right: 12px;
+	z-index: 1;
+	top: 10px;
+}
+.avatar-upload .avatar-edit input {
+	display: none;
+}
+.avatar-upload .avatar-edit input + label.edirPicture {
+	width: 34px;
+	height: 34px;
+	margin-bottom: 0;
+	border-radius: 100%;
+	background: #FFFFFF;
+	border: 1px solid transparent;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+}
+.edirPicture{
+	display: none;
+}
+.addPicture {
+    position: absolute;
+	z-index: 1;
+	top: 6px;
+	left: 6px;
+	height: calc(100% - 12px);
+	width: calc(100% - 12px);
+	text-align: center;
+	cursor: pointer;
+	background: #d2e5ff;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #a1a1a1;
+	line-height: 39px;
+	font-family: 'AvenirNextLTW01BoldRegular';
+	padding-top: 42px;
+}
+.addPicture img{
+	display: block;
+	margin: 0 auto;
+}
+.avatar-upload .avatar-edit input + .label.edirPicture:hover {
+	background: #f1f1f1;
+	border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label.edirPicture:after {
+	content: "\f040";
+	font-family: 'FontAwesome';
+	color: #757575;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+}
+.avatar-upload .avatar-preview {
+	width: 171px;
+	height: 171px;
+	position: relative;
+	border-radius: 100%;
+	border: 6px solid #F8F8F8;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.gender{
+	max-width: 404px;
+	margin: 50px auto 0px;
+}
+.container_radio {
+	display: block;
+	position: relative;
+	padding-left: 43px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 24px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	float: left;
+	color: #333;
+}
+.container_radio.female{
+	float: right;
+	margin-right: 5px;
+}
+.container_radio input {
+	position: absolute;
+	opacity: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 29px;
+	width: 29px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+.container_radio input:checked ~ .checkmark {
+	background-color: #f85ab6;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.container_radio input:checked ~ .checkmark:after {
+	display: block;
+}
+.container_radio .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: white;
+}
+.location{
+	max-width: 420px;
+	margin: 28px auto 0px;
+}
+.profile_attr{
+	max-width: 960px;
+	margin: 54px auto 0px;
+}
+.attr_left{
+	float: left;
+	width: 50%;
+}
+.attr_right{
+	float: right;
+	width: 50%;
+	text-align: right;
+	padding-right: 106px;
+}
+.attr_outer{
+	margin-bottom: 45px;
+}
+.attr_outer label{
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 0px;
+	text-align: right;
+	width: 122px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+}
+.attr_control{
+	width: 119px;
+	height: 38px;
+	border: 0px;
+	border-radius: 5px;
+	padding: 0px 19px 0px 8px;
+	margin-left: 19px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	color: #333;
+	outline: none;
+}
+select.attr_control{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: #fff url("../images/down.png") no-repeat 95% center;
+}
+.photo_list{
+	max-width: 860px;
+	margin: 0 auto;
+}
+.images{
+  display: flex;
+  flex-wrap:  wrap;
+  margin-top: 24px;
+}
+.images .img,
+.images .pic {
+  width: 180px;
+  height: 225px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 9px rgba(50,60,90,0.13);
+  -moz-box-shadow: 0px 4px 9px rgba(50,60,90,0.13);
+	box-shadow: 0px 4px 9px rgba(50,60,90,0.13);
+}
+.images .img {
+  width: 180px;
+  height: 225px;
+  background-size: cover;
+  margin-right: 45px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.images .img:nth-child(4n) {
+  margin-right: 0;
+}
+.images .img span {
+  display: none;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.images .img::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  transition: opacity .1s ease-in;
+  border-radius: 4px;
+  opacity: 0;
+  position: absolute;
+}
+.images .img:hover::after {
+  display: block;
+  background-color: #000;
+  opacity: .5;
+}
+.images .img:hover span {
+  display: block;
+  color: #fff;
+  font-size: 21px;
+}
+.pic{
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	color: #a1a1a1;
+	line-height: 39px;
+	font-family: 'AvenirNextLTW01BoldRegular';
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	display: flex;
+	padding: 0px;
+	justify-content: center;
+}
+.pic div{
+	width: 100%;
+}
+.pic img{
+	display: block;
+	margin: 0 auto;
+}
+.edit_profile .btn_pink {
+    margin-top: 58px;
+}
+/*----------- Edit Profile Page CSS End ------------*/
+
+@media(min-width: 992px) and (max-width:1199px){
+	/*----------- Login Page CSS Start ------------*/
+	.login_bg {
+    	height: 725px;
+	}
+	.login_form {
+    	margin: 150px auto 0px;
+	}
+	.login_input .btn_pink {
+    	margin: 125px auto 0px;
+	}
+	/*----------- Login Page CSS End ------------*/
+	/*----------- Model Page CSS Start ------------*/
+	.model_list li {
+    	margin: 10px 55px 0px;
+	}
+	/*----------- Model Page CSS End ------------*/
+}
+@media(min-width: 768px) and (max-width:991px){
+	.signup_outer h2 {
+    	font-size: 41px;
+    	margin-bottom: 20px;
+	}
+	.form_control {
+    	margin-bottom: 15px;
+	}
+	.btn_pink {
+    	margin-top: 15px;
+	}
+	/*----------- Login Page CSS Start ------------*/
+	.logo img{
+		width: 300px;
+	}
+	.login_form {
+    	margin: 125px auto 0px;
+	}
+	.login_input .btn_pink {
+    	margin: 80px auto 0px;
+	}
+	.login_bg {
+    	height: 597px;
+	}
+	/*----------- Login Page CSS End ------------*/
+	/*----------- Model Page CSS Start ------------*/
+	.model_list li {
+    	width: 290px;
+    	margin: 20px 25px;
+	}
+	.model_img {
+    	border: 5px solid #fff;
+	}
+	.model_list img {
+    	width: 278px;
+    	height: 278px;
+    }
+    .model_list li p {
+    	font-size: 22px;
+	}
+	.model_bg {
+    	height: 798px;
+	}
+	/*----------- Model Page CSS End ------------*/
+	.attr_right {
+    	padding-right: 0px;
+	}
+	.images .img {
+    	width: 150px;
+    	height: 188px;
+    }
+	.images .img, .images .pic {
+    	width: 150px;
+    	height: 188px;
+    	margin-bottom: 15px;
+	}
+}
+@media(max-width: 767px){
+	/*----------- Sign Up Page CSS Start ------------*/
+	body, html {
+    	height: auto;
+	}
+	.main_bg{
+		padding: 30px 15px;
+	}
+	.signup_outer h2 {
+    	font-size: 30px;
+    	margin-bottom: 20px;
+	}
+	.form_control {
+    	height: 40px;
+    	font-size: 14px;
+    	padding: 0px 16px;
+    	margin-bottom: 15px;
+    }
+    .closebtn {
+    	right: 5px;
+    	top: 8px;
+    	width: 50px;
+	}
+	.btn_pink {
+    	margin-top: 10px;
+    	font-size: 17px;
+    	height: 40px;
+		line-height: 40px;
+	}
+	.form_input img {
+    	height: 15px;
+	}
+	.inputfile-6 + label span {
+    	line-height: 40px;
+	}
+	.inputfile + label {
+    	height: 40px;
+    	padding: 0px 45px 0px 16px;
+    	font-size: 14px;
+	}
+	/*----------- Sign Up Page CSS End ------------*/
+	/*----------- Login Page CSS Start ------------*/
+	.login_bg {
+    	height: 550px;
+    	padding: 4px 15px;
+	}
+	.login_top_bar a {
+    	font-size: 17px;
+	}
+	.logo {
+    	margin-top: 0px !important;
+	}
+	.logo img{
+		width: 250px !important;
+		height: auto;
+	}
+	.login_form {
+    	margin: 105px auto 0px;
+	}
+	.login_control {
+    	height: 45px;
+    	padding: 0px 20px 0px 50px;
+    	margin-bottom: 30px;
+    	font-size: 16px;
+	}
+	.login_input img {
+    	height: 22px;
+	}
+	.login_input .btn_pink {
+    	margin: 105px auto 0px;
+    	font-size: 19px;
+	}
+	.forgot_pass {
+    	font-size: 19px;
+    	margin-top: 10px;
+    	margin-left: 0px;
+    	margin-bottom: 15px;
+	}
+	/*----------- Login Page CSS End ------------*/
+
+	/*----------- Model Page CSS Start ------------*/
+	.title {
+    	margin-top: 40px;
+	}
+	.title h3 {
+    	font-size: 26px;
+	}
+	.model_list li {
+    	display: block;
+    	width: 290px;
+    	margin: 20px auto;
+	}
+	.model_img {
+    	border: 5px solid #fff;
+	}
+	.model_list img {
+    	width: 278px;
+    	height: 278px;
+    }
+    .model_list li p {
+    	font-size: 20px;
+    	margin-top: 10px;
+    	margin-bottom: 30px;
+	}
+	.model_btn .btn_pink {
+    	margin-top: 10px;
+    	line-height: 38px;
+	}
+	.model_bg {
+		height: 1115px;
+	}
+	/*----------- Model Page CSS End ------------*/
+	/*----------- Edit Profile Page CSS Start ------------*/
+	.edit_profile h2 {
+    	font-size: 30px;
+    	margin-bottom: 20px;
+	}
+	.edit_profile {
+    	padding: 15px 15px;
+	}
+	.avatar-upload {
+    	max-width: 150px;
+    }
+    .avatar-upload .avatar-preview {
+    	width: 150px;
+    	height: 150px;
+	}
+	.addPicture {
+    	font-size: 15px;
+    	padding-top: 36px;
+	}
+	.container_radio {
+    	padding-left: 35px;
+    	font-size: 20px;
+	}
+	.checkmark {
+    	height: 25px;
+    	width: 25px;
+	}
+	.container_radio .checkmark::after {
+    	width: 8px;
+    	height: 8px;
+	}
+	.gender {
+    	margin: 25px auto 0px;
+	}
+	.container_radio.female {
+    	margin-right: 0px;
+	}
+	.location {
+    	margin: 9px auto 0px;
+	}
+	.profile_attr {
+    	margin: 15px auto 0px;
+	}
+	.attr_left {
+    	float: none;
+    	width: 100%;
+	}
+	.attr_outer {
+    	margin-bottom: 20px;
+	}
+	.attr_outer label {
+    	font-size: 18px;
+    	text-align: left;
+    	width: 90px;
+	}
+	.attr_control {
+    	width: calc(100% - 102px);
+    	margin-left: 8px;
+    	font-size: 15px;
+    }
+    .attr_right {
+    	float: none;
+    	width: 100%;
+    	text-align: left;
+    	padding-right: 0px;
+	}
+	.images .img {
+    	width: 90px;
+    	height: 113px;
+    	margin-right: 9px;
+	}
+	.images .img, .images .pic {
+    	width: 90px;
+    	height: 113px;
+    	margin-bottom: 10px;
+	}
+	.pic {
+    	font-size: 14px;
+	}
+	.pic img{
+		width: 20px;
+	}
+	.addPicture img {
+    	width: 33px;
+	}
+	.edit_profile .btn_pink {
+    	margin-top: 20px;
+	}
+	.photo_list {
+        max-width: 388px;
+	}
+	/*----------- Edit Profile Page CSS End ------------*/
+}
+@media(max-width: 480px){
+	/*----------- Login Page CSS Start ------------*/
+	.login_bg {
+    	height: 348px;
+    	padding: 4px 15px;
+	}
+	.login_top_bar a {
+    	font-size: 17px;
+	}
+	.logo {
+    	margin-top: 0px !important;
+	}
+	.logo img{
+		width: 190px !important;
+		height: auto;
+	}
+	.login_form {
+    	margin: 45px auto 0px;
+	}
+	.login_control {
+    	height: 40px;
+    	padding: 0px 20px 0px 45px;
+    	margin-bottom: 20px;
+    	font-size: 14px;
+	}
+	.login_input img {
+    	height: 18px;
+	}
+	.login_input .btn_pink {
+    	margin: 45px auto 0px;
+    	font-size: 17px;
+	}
+	.forgot_pass {
+    	font-size: 16px;
+    	margin-top: 10px;
+    	margin-left: 0px;
+    	margin-bottom: 15px;
+	}
+	/*----------- Login Page CSS End ------------*/
+	/*----------- Model Page CSS Start ------------*/
+	.title {
+    	margin-top: 40px;
+	}
+	.title h3 {
+    	font-size: 26px;
+	}
+	.model_list li {
+    	display: block;
+    	width: 290px;
+    	margin: 20px auto;
+	}
+	.model_img {
+    	border: 5px solid #fff;
+	}
+	.model_list img {
+    	width: 278px;
+    	height: 278px;
+    }
+    .model_list li p {
+    	font-size: 20px;
+    	margin-top: 10px;
+    	margin-bottom: 30px;
+	}
+	.model_btn .btn_pink {
+    	margin-top: 10px;
+    	line-height: 38px;
+	}
+	.model_bg {
+		height: 1115px;
+	}
+	/*----------- Model Page CSS End ------------*/
+
+	/*----------- Edit Profile Page CSS Start ------------*/
+	.photo_list {
+        max-width: 300px;
+	}
+	.images .img:hover span {
+    	font-size: 16px;
+	}
+	.images .img {
+    	width: 90px;
+    	height: 113px;
+    	margin-right: 9px;
+	}
+	.images .img, .images .pic {
+    	width: 90px;
+    	height: 113px;
+    	margin-bottom: 10px;
+	}
+	.pic {
+    	font-size: 14px;
+	}
+	.pic img{
+		width: 20px;
+	}
+	.edit_profile .btn_pink {
+    	margin-top: 20px;
+	}
+	.images .img:nth-child(3n) {
+    	margin-right: 0;
+	}
+	.images .img:nth-child(4n) {
+    	margin-right: 9px;
+	}
+	/*----------- Edit Profile Page CSS End ------------*/
+}
