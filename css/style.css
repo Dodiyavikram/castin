@@ -298,23 +298,32 @@ a{
 	background: -webkit-linear-gradient(top, #9fd5ff 0%,#b4acfa 100%);
 	background: linear-gradient(to bottom, #9fd5ff 0%,#b4acfa 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9fd5ff', endColorstr='#b4acfa',GradientType=0 );
-	min-height: 1000px;
 	padding: 40px 15px 50px;
+}
+.edit_profile_hed{
+	text-align: center;
 }
 .edit_profile h2 {
     font-size: 67px;
     font-family: 'Avenir 85';
     font-weight: bold;
     color: #fff;
-    margin-bottom: 47px;
     -webkit-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
     -moz-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
     text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
     margin-top: 7px;
     text-align: center;
+    display: inline-block;
+	vertical-align: middle;
+}
+.edit_profile_hed a{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 .profile_image{
 	position: relative;
+	margin-top: 47px;
 }
 .avatar-upload {
 	position: relative;
@@ -454,6 +463,13 @@ a{
 .location{
 	max-width: 420px;
 	margin: 28px auto 0px;
+	position: relative;
+}
+.location i{
+	position: absolute;
+	font-size: 25px;
+	top: 12px;
+	right: 15px;
 }
 .profile_attr{
 	max-width: 960px;
@@ -587,7 +603,322 @@ select.attr_control{
     margin-top: 58px;
 }
 /*----------- Edit Profile Page CSS End ------------*/
-
+/*----------- Profile Page CSS Start ------------*/
+.user_profile{
+	background: url(../images/profile_bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 311px;
+}
+.profile_top_header{
+	max-width: 1010px;
+	margin: 0 auto;
+}
+.profile_top_header ul{
+	font-size: 0px;
+	margin-top: 1px;
+}
+.profile_top_header li{
+	display: inline-block;
+}
+.profile_top_header li:nth-child(2){
+	margin-left: 127px;
+}
+.profile_top_header li:nth-child(3){
+	margin-left: 335px;
+}
+.profile_top_header li:nth-child(4){
+	margin-left: 132px;
+}
+.profile_top_header li a{
+	font-size: 23px;
+	color: #fff;
+}
+.profile_top_header li a span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.profile_top_header li a img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.user_info{
+	text-align: center;
+}
+.user_img{
+	border: 2px solid #fff;
+	height: 157px;
+	width: 157px;
+	border-radius: 50%;
+	margin: -10px auto 0px;
+}
+.user_img img{
+	height: 153px;
+	width: 153px;
+	border-radius: 50%;
+}
+.username h3{
+	color: #fff;
+	font-size: 45px;
+	display: inline-block;
+	margin-left: 45px;
+	vertical-align: middle;
+}
+.username a{
+	display: inline-block;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.user_location{
+	font-style: italic;
+	font-size: 23px;
+}
+.upload_imges{
+	text-align: center;
+}
+.upload_imges .images {
+    justify-content: center;
+    margin-top: 60px;
+}
+.upload_imges .images .img {
+    width: 159px;
+    height: 208px;
+    margin: 0px 22px;
+    pointer-events: none;
+  	cursor: default;
+}
+.user_more_info .attr_control{
+	text-align: center;
+	border-left: 1px solid #38b8f2;
+	border-right: 1px solid #843cf6;
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 1px;
+	-moz-background-size: 100% 1px;
+	background-size: 100% 1px;
+	background-image: -webkit-linear-gradient(left, #38b8f2 0%, #843cf6 100%), -webkit-linear-gradient(left, #38b8f2 0%, #843cf6 100%);
+	background-image: -moz-linear-gradient(left, #38b8f2 0%, #843cf6 100%), -moz-linear-gradient(left, #38b8f2 0%, #843cf6 100%);
+	background-image: -o-linear-gradient(left, #38b8f2 0%, #843cf6 100%), -o-linear-gradient(left, #38b8f2 0%, #843cf6 100%);
+	background-image: linear-gradient(to right, #38b8f2 0%, #843cf6 100%), linear-gradient(to right, #38b8f2 0%, #843cf6 100%);
+}
+.user_more_info .profile_attr{
+	max-width: 842px;
+	margin: 75px auto 0px;
+}
+.user_more_info .attr_right {
+    padding-right: 143px;
+}
+.delete_overlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	z-index: 10;
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 10px;
+	display: none;
+}
+.delete_overlay.active{
+	display: block;
+}
+.delete_box{
+	background: #fcfcfc;
+	width: 520px;
+	height: 385px;
+	border-radius: 10px;
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 10px;
+	padding: 40px 85px 28px;
+	text-align: center;
+	z-index: 11;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+.delete_box.active{
+	opacity: 1;
+	visibility: visible;
+}
+.box-header h3{
+	font-size: 26px;
+	color: #333333;
+	font-weight: normal;
+	line-height: 28px;
+	margin-left: 0px;
+	letter-spacing: 1px;
+}
+.box-header i{
+	position: absolute;
+	top: -16px;
+	right: -37px;
+	cursor: pointer;
+}
+.box-body {
+    margin-top: 94px;
+}
+.box-body a{
+	font-size: 26px;
+	color: #333333;
+	font-style: italic;
+	border: 2px solid #000;
+	border-radius: 5px;
+	background: #fff;
+	height: 45px;
+	outline: none;
+	text-decoration: none;
+	width: 143px;
+	padding: 0px;
+	box-shadow: none !important;
+	line-height: 44px;
+	display: inline-block;
+	margin-right: 44px;
+	margin-left: 0px;
+}
+.box-body a:hover{
+	color: #fff;
+	border-color: rgba(248,90,182,1);
+	background: rgba(248,90,182,1);
+}
+.box-body a + a{
+	margin-left: 15px;
+	margin-right: 0px;
+}
+.box-footer{
+	margin-top: 30px;
+}
+.edirPicture.editimage{
+	display: block !important;
+}
+/*----------- Profile Page CSS End ------------*/
+/*----------- Job Page CSS Start ------------*/
+.job .user_profile{
+	background: url(../images/job_bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 155px;
+}
+.page_title h2{
+	color: #fff;
+	font-size: 67px;
+	margin-top: 23px;
+	margin-left: -42px;
+	-webkit-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+	-moz-text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+	text-shadow: 13px 0px 25px rgba(0,0,0,0.28);
+}
+.job_list{
+	min-height: 556px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.no_job{
+	text-align: center;
+	width: 100%;
+}
+.no_job p{
+	color: #000;
+	font-style: italic;
+	font-size: 30px;
+}
+/*----------- Job Page CSS End ------------*/
+/*----------- Message Page CSS Start ------------*/
+.message_left{
+	width: 305px;
+	background:#f6f6f6;
+	position: fixed;
+	left: 0px;
+	height: 100%;
+	overflow: hidden;
+	top: 156px;
+	overflow-y: auto;
+	padding: 15px 10px 15px 30px;
+}
+.message_serch{
+	position: relative;
+}
+.message_serch input[type='text']{
+	border: 0px;
+	border-radius: 5px;
+	height: 40px;
+	background: rgba(16,27,79,0.05);
+	color: rgba(16,27,79,0.5);
+	padding: 0px 15px 0px 60px;
+	font-style: italic;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+.message_serch i{
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	color: #101b4f;
+}
+.message_right{
+	position: fixed;
+	right: 0px;
+	height: 100%;
+	width: calc(100% - 305px);
+	padding: 30px 0px;
+	top: 156px;
+}
+.messagebox{
+	width: 100%;
+	padding: 0px 54px;
+	height: calc(100% - 205px);
+	overflow: hidden;
+	overflow-y: auto;
+}
+.messagetype{
+	padding: 10px 54px;
+}
+.message_text{
+	float: left;
+	width: calc(100% - 50px);
+	position: relative;
+}
+.message_in_text{
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+	border-radius: 8px;
+	border: 0px;
+	padding: 0px 55px 0px 15px;
+}
+.message_text button{
+	position: absolute;
+	border: 0px;
+	outline: none;
+	background: none;
+	right: 11px;
+	top: 9px;
+	box-shadow: none !important;
+	padding: 0px;
+}
+.messagetype img.avtar{
+	float: right;
+	height: 40px;
+	width: 40px;
+	margin-top: 2.5px;
+	border-radius: 50%;
+}
+/*----------- Message Page CSS End ------------*/
 @media(min-width: 992px) and (max-width:1199px){
 	/*----------- Login Page CSS Start ------------*/
 	.login_bg {
@@ -605,6 +936,15 @@ select.attr_control{
     	margin: 10px 55px 0px;
 	}
 	/*----------- Model Page CSS End ------------*/
+	.user_profile {
+    	padding: 0px 15px;
+	}
+	.profile_top_header li:nth-child(4) {
+    	margin-left: 86px;
+	}
+	.page_title h2 {
+    	margin-left: 0px;
+	}
 }
 @media(min-width: 768px) and (max-width:991px){
 	.signup_outer h2 {
@@ -661,6 +1001,39 @@ select.attr_control{
     	width: 150px;
     	height: 188px;
     	margin-bottom: 15px;
+	}
+	.user_profile {
+    	padding: 0px 15px;
+	}
+	.profile_top_header li:nth-child(2) {
+    	margin-left: 81px;
+	}
+	.profile_top_header li:nth-child(3) {
+    	margin-left: 170px;
+	}
+	.profile_top_header li:nth-child(4) {
+    	margin-left: 73px;
+	}
+	.user_more_info .profile_attr {
+    	padding: 0px 15px;
+	}
+	.user_more_info .attr_right {
+    	padding-right: 0px;
+	}
+	.page_title h2 {
+    	margin-left: 0px;
+	}
+	.message_right {
+    	padding: 15px 0px;
+    }
+	.message_serch input[type="text"] {
+    	width: 100%;
+	}
+	.messagebox {
+    	padding: 0px 15px;
+    }
+    .messagetype {
+    	padding: 10px 15px;
 	}
 }
 @media(max-width: 767px){
@@ -778,7 +1151,7 @@ select.attr_control{
 	/*----------- Edit Profile Page CSS Start ------------*/
 	.edit_profile h2 {
     	font-size: 30px;
-    	margin-bottom: 20px;
+    	margin-bottom: 0px;
 	}
 	.edit_profile {
     	padding: 15px 15px;
@@ -867,6 +1240,125 @@ select.attr_control{
         max-width: 388px;
 	}
 	/*----------- Edit Profile Page CSS End ------------*/
+	.edit_profile_hed img{
+		width: 35px;
+	}
+	.profile_image {
+    	margin-top: 25px;
+	}
+	.delete_box {
+    	width: 90%;
+    	height: 300px;
+    	padding: 35px 20px 20px;
+	}
+	.box-header i {
+    	top: -8px;
+    	right: -13px;
+	}
+	.box-header h3 {
+    	font-size: 21px;
+    	line-height: 25px;
+	}
+	.box-body {
+    	margin-top: 60px;
+	}
+	.box-body a {
+    	font-size: 21px;
+    	width: 100px;
+    	height: 42px;
+    	line-height: 40px;
+    	margin-right: 25px;
+	}
+	.user_profile {
+		height: 311px;
+    	padding: 0px 15px;
+	}
+	.profile_top_header li a {
+    	font-size: 17px;
+	}
+	.profile_top_header li a img{
+		width: 17px;
+	}
+	.profile_top_header ul{
+		text-align: center;
+	}
+	.profile_top_header li{
+    	margin:0px 19px 8px !important;
+	}
+	.user_img {
+		height: 135px;
+    	width: 135px;
+    	margin: 5px auto 0px;
+	}
+	.user_img img {
+    	height: 131px;
+    	width: 131px;
+	}
+	.username h3 {
+		font-size: 22px;
+    	margin-left: 0px;
+    }
+    .username img{
+    	width: 24px;
+    }
+    .user_location {
+    	font-size: 17px;
+	}
+	.rating_img img{
+		width: 90px;
+	}
+	.upload_imges .images {
+    	margin-top: 35px;
+	}
+	.user_more_info .profile_attr {
+    	margin: 30px 0px 0px;
+    	padding: 0px 15px;
+	}
+	.user_more_info .attr_right {
+    	padding-right: 0px;
+	}
+	.upload_imges .images .img {
+    	width: 90px;
+    	height: 133px;
+    	margin: 0px 5px 10px;
+    	border-radius: 5px;
+    }
+    .page_title h2 {
+    	font-size: 40px;
+    	margin-top: 15px;
+    	margin-left: 0px;
+	}
+	.job_list {
+    	min-height: 300px;
+	}
+	.no_job p {
+    	font-size: 20px;
+	}
+	.message_left {
+    	width: 100%;
+    	position: relative;
+    	top: 0px;
+    	min-height: 150px;
+    	padding: 15px;
+	}
+	.message_right {
+    	position: relative;
+    	right: 0px;
+    	width: 100%;
+    	padding: 15px 0px;
+    	top: 0px;
+    	height: 300px;
+	}
+	.message_serch input[type="text"] {
+    	width: 100%;
+	}
+	.messagebox {
+    	padding: 0px 15px;
+    	height: calc(300px - 65px);
+    }
+    .messagetype {
+    	padding: 10px 15px;
+	}
 }
 @media(max-width: 480px){
 	/*----------- Login Page CSS Start ------------*/
@@ -957,6 +1449,16 @@ select.attr_control{
     	height: 113px;
     	margin-bottom: 10px;
 	}
+	.upload_imges .images .img {
+    	width: 90px;
+    	height: 133px;
+    	margin: 0px 5px 10px;
+    	border-radius: 5px;
+    }
+    .user_more_info .profile_attr {
+    	margin: 30px 0px 0px;
+    	padding: 0px 15px;
+	}
 	.pic {
     	font-size: 14px;
 	}
@@ -971,6 +1473,15 @@ select.attr_control{
 	}
 	.images .img:nth-child(4n) {
     	margin-right: 9px;
+	}
+	.profile_top_header li {
+    	margin: 0px 10px 8px !important;
+	}
+	.profile_top_header li a {
+    	font-size: 17px;
+	}
+	.profile_top_header li a img{
+		width: 17px;
 	}
 	/*----------- Edit Profile Page CSS End ------------*/
 }
