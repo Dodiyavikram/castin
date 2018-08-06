@@ -10,23 +10,35 @@
 	</head>
 	<body>
 		<div class="edit_profile">
-			<a href="signup.html">
-				<img src="images/close_btn.png" class="closebtn">
-			</a>
-			<h2>Edit profile</h2>
+			<div class="edit_profile_hed">
+				<h2>Edit profile</h2>
+				<a class="delete_profile" href="#">
+					<img src="images/delete_icon.png" alt="">
+				</a>
+				<div class="delete_overlay"></div>
+				<div class="delete_box">
+					<div class="box-header">
+						<i><img src="images/close_btn.png" alt=""></i>
+						<h3>Do you want to delete <br> your profile ?</h3>
+					</div>
+					<div class="box-body">
+						<a href="login.html" class="yes btn">Yes</a>
+						<a href="javascript:void(0)" class="no btn">No</a>
+					</div>
+					<div class="box-footer">
+						<img src="images/delete_button.png" alt="">
+					</div>
+				</div>
+			</div>
 			<form>
 				<div class="profile_image">
 					<div class="avatar-upload">
-						<label class="addPicture" for="imageUpload">
-							<img src="images/plus.png" alt="">
-							PICTURE
-						</label>
-					    <div class="avatar-edit">
+						<div class="avatar-edit">
 					        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-					        <label class="edirPicture" for="imageUpload"></label>
+					        <label class="edirPicture editimage" for="imageUpload"></label>
 					    </div>
 					    <div class="avatar-preview">
-					        <div id="imagePreview">
+					        <div id="imagePreview" style="background-image: url(images/avatar.png)">
 					        </div>
 					    </div>
 					</div>
@@ -37,29 +49,30 @@
 					  	<span class="checkmark"></span>
 					</label>
 					<label class="container_radio female">Female
-					  	<input type="radio" name="gender">
+					  	<input type="radio" checked="checked" name="gender">
 					  	<span class="checkmark"></span>
 					</label>
 					<div class="clearfix"></div>
 				</div>
 				<div class="location">
-					<input type="text" class="form_control" placeholder="Location" name="">
+					<input type="text" class="form_control" value="Austin, USA" placeholder="Location" name="">
+					<i class="fa fa-map-marker"></i>
 				</div>
 				<div class="profile_attr">
 					<div class="attr_left">
 						<div class="attr_outer">
 							<label>Height</label>
-							<input type="text" max="220" min="120" class="attr_control"/>
+							<input type="text" max="220" min="120" value="176 cm" class="attr_control"/>
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
 							<label>Weight</label>
-							<input type="text" max="140" min="40" class="attr_control" name="">
+							<input type="text" max="140" min="40" value="67 kg" class="attr_control" name="">
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
 							<label>Bust/Chest</label>
-							<input type="text" max="195" min="65" class="attr_control" name="">
+							<input type="text" max="195" min="65" value="82 cm" class="attr_control" name="">
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
@@ -98,17 +111,17 @@
 					<div class="attr_right">
 						<div class="attr_outer">
 							<label>Hips</label>
-							<input type="text" max="135" min="78" class="attr_control" name="">
+							<input type="text" max="135" min="78" value="85 cm" class="attr_control" name="">
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
 							<label>Size</label>
-							<input type="text" max="51" min="35" class="attr_control" name="">
+							<input type="text" max="51" min="35" value="39" class="attr_control" name="">
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
 							<label>Waist</label>
-							<input type="text" max="130" min="65" class="attr_control" name="">
+							<input type="text" max="130" min="65" value="65 cm" class="attr_control" name="">
 							<div class="clearfix"></div>
 						</div>
 						<div class="attr_outer">
@@ -142,6 +155,15 @@
 				</div>
 				<div class="photo_list">
 					<div class="images">
+						<div class="img" style="background-image: url(images/upload_01.png);">
+							<span>remove</span>
+						</div>
+						<div class="img" style="background-image: url(images/upload_02.png);">
+							<span>remove</span>
+						</div>
+						<div class="img" style="background-image: url(images/upload_03.png)">
+							<span>remove</span>
+						</div>
 			        	<div class="pic">
 			        		<div>
 			          			<img src="images/plus.png" alt="">
@@ -151,7 +173,8 @@
 			      	</div>
 				</div>
 				<div class="form_input text-center">
-					<button class="btn btn_pink" type="submit">Done</button>
+					<!-- <button class="btn btn_pink" type="submit">Done</button> -->
+					<a class="btn btn_pink" href="profile.html">Done</a>
 				</div>
 			</form>
 		</div>
