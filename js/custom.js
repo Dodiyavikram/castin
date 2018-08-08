@@ -5,7 +5,7 @@ $(document).ready(function(e){
 		$(this).addClass("active");
 	});
 
-	$(".edit_profile_hed a.delete_profile").click(function(e){
+	$(".delete_profile").click(function(e){
 		e.preventDefault();
 		$(".delete_overlay,.delete_box").addClass("active");
 	});
