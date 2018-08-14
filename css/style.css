@@ -662,7 +662,6 @@ select.attr_control{
 	color: #fff;
 	font-size: 45px;
 	display: inline-block;
-	margin-left: 45px;
 	vertical-align: middle;
 }
 .username a{
@@ -847,10 +846,13 @@ select.attr_control{
 	overflow: hidden;
 	top: 156px;
 	overflow-y: auto;
-	padding: 15px 10px 15px 30px;
+	padding: 15px 10px 15px 15px;
 }
 .message_serch{
 	position: relative;
+}
+.message_serch {
+    margin-left: 15px;
 }
 .message_serch input[type='text']{
 	border: 0px;
@@ -861,6 +863,7 @@ select.attr_control{
 	padding: 0px 15px 0px 60px;
 	font-style: italic;
 	font-size: 12px;
+	width: 100%;
 	letter-spacing: 0.5px;
 }
 .message_serch i{
@@ -879,7 +882,7 @@ select.attr_control{
 }
 .messagebox{
 	width: 100%;
-	padding: 0px 54px;
+	padding: 0px 30px;
 	height: calc(100% - 205px);
 	overflow: hidden;
 	overflow-y: auto;
@@ -917,6 +920,9 @@ select.attr_control{
 	width: 40px;
 	margin-top: 2.5px;
 	border-radius: 50%;
+	-webkit-filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));
+	-moz-filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));
+	filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));
 }
 /*----------- Message Page CSS End ------------*/
 /*----------- Edit Casting Page CSS Start ------------*/
@@ -1427,6 +1433,701 @@ select.attr_control{
     margin-left: 0%;
 }
 /*----------- Edit Casting Job Page CSS End ------------*/
+/*----------- Browse Models Job Page CSS Start ------------*/
+.browse_models{
+	max-width: 1020px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	min-height: 800px;
+}
+.browseModelsList{
+	padding: 35px 0px 22px;
+	position: relative;
+}
+.browseModelsList:after{
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: calc(100% - 75px);
+	left: 75px;
+	bottom: 0px;
+	background: rgba(128,103,255,0.80);
+}
+.browse_models .browseModelsList:last-child:after{
+	content: none;
+}
+.browseModelsList li{
+	float: left;
+	height: 155px;
+	display: flex;
+	align-items: center;
+}
+.browseModelsList li:first-child{
+	width: 155px;
+}
+.browseModelsList img{
+	width: 155px;
+	height: 155px;
+	border-radius: 50%;
+}
+.browseModelsList li:nth-child(2){
+	width: 320px;
+	padding: 0px 15px 0px 40px;
+}
+.browseModelsList h4{
+	font-size: 25px;
+	color: #333333;
+	font-family: 'Avenir 85';
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.star-ratings-sprite{
+    background: url("../images/rating_star1.png") repeat-x;
+    font-size: 0;
+    height: 27px;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 164px;
+}
+.star-ratings-sprite-rating{
+    background: url("../images/rating_star1.png") repeat-x;
+    background-position: 0 100%;
+    float: left;
+    height: 27px;
+    display: block;
+}
+.browseModelsList li:nth-child(3){
+	width: 300px;
+	padding: 0px 15px 0px 0px;
+}
+.browseModelsList p{
+	font-size: 18px;
+	color: #333333;
+}
+.browseModelsList a{
+	font-size: 18px;
+	color: #333333;
+	font-family: 'Avenir 85';
+}
+.select_modal a{
+	margin: 15px 10px 0px !important;
+	position: absolute;
+	z-index: 1;
+}
+.select_modal a.select_ok{
+	margin-left: -70px !important;
+}
+/*----------- Browse Models Job Page CSS End ------------*/
+/*----------- Message Page CSS Start ------------*/
+.avtar_img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+	-moz-box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+	box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+}
+.avtar_img img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.message_info{
+	float: left;
+	width: calc(40% - 57px);
+	margin-left: 17px;
+}
+.message_info_inner{
+	padding: 12px 15px 12px 25px;
+	border-radius: 25px;
+	border-top-left-radius: 0px;
+	background: rgba(44,206,255,,0.15);
+	background: -moz-linear-gradient(-45deg, rgba(44,206,255,0.15) 0%, rgba(128,103,255,0.15) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,206,255,0.15)), color-stop(100%, rgba(128,103,255,0.15)));
+	background: -webkit-linear-gradient(-45deg, rgba(44,206,255,0.15) 0%, rgba(128,103,255,0.15) 100%);
+	background: -o-linear-gradient(-45deg, rgba(44,206,255,0.15) 0%, rgba(128,103,255,0.15) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(44,206,255,0.15) 0%, rgba(128,103,255,0.15) 100%);
+	background: linear-gradient(135deg, rgba(44,206,255,0.15) 0%, rgba(128,103,255,0.15) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cceff', endColorstr='#8067ff', GradientType=1 );
+	font-size: 16px;
+	color: #333333;
+	position: relative;
+	display: inline-block;
+}
+.message_info a{
+	color: #333333;
+	font-family: 'Avenir Next';
+	font-weight: 900;
+}
+.message_info a:hover{
+	color: #000;
+}
+.time{
+	position: absolute;
+	font-size:14px;
+	color: #9b9b9b;
+	top: -2px;
+	right: -78px;
+}
+.user_message_img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+	-moz-box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+	box-shadow: 0px 6px 8px rgba(16,27,79,0.2);
+}
+.user_message_img img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+.message_serch{
+	margin-bottom: 20px;
+}
+.user_message_list li{
+	height: 95px;
+	overflow: hidden;
+	border-radius: 10px;
+	padding: 20px 10px;
+	margin-top: 5px;
+}
+.user_message_list li.active{
+	-webkit-box-shadow: 5px 0px 15px rgba(16,27,79,0.2);
+	-moz-box-shadow: 5px 0px 15px rgba(16,27,79,0.2);
+	box-shadow: 5px 0px 15px rgba(16,27,79,0.2);
+	background: rgba(44,206,255,1);
+	background: -moz-linear-gradient(-45deg, rgba(44,206,255,0.55) 0%, rgba(128,103,255,0.55) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,206,255,0.55)), color-stop(100%, rgba(128,103,255,0.55)));
+	background: -webkit-linear-gradient(-45deg, rgba(44,206,255,0.55) 0%, rgba(128,103,255,0.55) 100%);
+	background: -o-linear-gradient(-45deg, rgba(44,206,255,0.55) 0%, rgba(128,103,255,0.55) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(44,206,255,0.55) 0%, rgba(128,103,255,0.55) 100%);
+	background: linear-gradient(135deg, rgba(44,206,255,0.55) 0%, rgba(128,103,255,0.55) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cceff', endColorstr='#8067ff', GradientType=1 );
+}
+.user_message_info{
+	float: left;
+	width: calc(100% - 50px);
+	padding-left: 10px;
+}
+.user_message_info h4{
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+}
+.user_message_list li.active .user_message_info h4{
+	color: #fff;
+}
+.user_message_info span{
+	display: block;
+	text-align: right;
+	font-size: 12px;
+	color: rgba(16,27,97,0.40);
+	margin-top: -5px;
+}
+.user_message_list li.active .user_message_info span{
+	color: #fff;
+}
+.user_message_info p{
+	font-size: 12px;
+	margin-top: 4px;
+	color: rgba(16,27,97,0.40);
+	letter-spacing: 0.5px;
+}
+.user_message_list li.active .user_message_info p{
+	color: #333333;
+}
+.messagebox li{
+	margin-bottom: 50px;
+}
+.right_side .avtar_img{
+	float: right;
+}
+.right_side .message_info {
+    float: right;
+    margin-right: 17px;
+    text-align: right;
+    margin-left: 0px;
+}
+.right_side .message_info_inner{
+	border-radius: 25px;
+    border-top-right-radius: 0px;
+	background: rgba(201,109,215,0.15);
+	background: -moz-linear-gradient(-45deg, rgba(201,109,215,0.15) 0%, rgba(236,79,142,0.15) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(201,109,215,0.15)), color-stop(100%, rgba(236,79,142,0.15)));
+	background: -webkit-linear-gradient(-45deg, rgba(201,109,215,0.15) 0%, rgba(236,79,142,0.15) 100%);
+	background: -o-linear-gradient(-45deg, rgba(201,109,215,0.15) 0%, rgba(236,79,142,0.15) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(201,109,215,0.15) 0%, rgba(236,79,142,0.15) 100%);
+	background: linear-gradient(135deg, rgba(201,109,215,0.15) 0%, rgba(236,79,142,0.15) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c96dd7', endColorstr='#ec4f8e', GradientType=1 );
+}
+.right_side .time{
+	right: auto;
+	left: -78px;
+}
+.right_side .message_info_inner p{
+	text-align: left;
+}
+/*----------- Message Page CSS End ------------*/
+/*----------- Showing Job Page CSS Start ------------*/
+.back_btn{
+	position: relative;
+}
+.back_btn img{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: inline-block;
+	height: 57px;
+	width: 57px;
+	border-radius: 50%;
+}
+.showing_job textarea{
+	height: 95px;
+	resize: none;
+	padding: 10px 26px;
+}
+.showing_job{
+	margin: 0px auto 30px;
+	padding: 0px 15px;
+	max-width: 450px;
+}
+.Job_title{
+	padding: 0px 15px;
+}
+.Job_title h3{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 28px;
+	font-family: 'Avenir 85';
+}
+.showing_job label{
+	display: block;
+	margin-bottom: 2px;
+	font-family: 'Avenir 85';
+	font-size: 16px;
+	padding-left: 25px;
+	color: #616161;
+}
+.showing_job .form_control{
+	background: rgba(44,206,255,,0.15);
+	background: -moz-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,206,255,0.10)), color-stop(100%, rgba(128,103,255,0.10)));
+	background: -webkit-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -o-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: linear-gradient(135deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cceff', endColorstr='#8067ff', GradientType=1 );
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	margin-bottom: 22px;
+}
+.dropshadow{
+	-webkit-filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));
+	-moz-filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));
+	filter: drop-shadow(0px 3px 9px rgba(0,0,0,0.2));	
+}
+.showing_job a{
+	display: inline-block;
+	margin: 35px 75px 30px;
+}
+/*----------- Showing Job Page CSS End ------------*/
+/*----------- Book Model Page CSS Start ------------*/
+.book_model_button{
+	text-align: center;
+}
+.book_model_button a{
+	display: inline-block;
+	border: 0px;
+	height: 38px;
+	width: 175px;
+	line-height: 36px;
+	outline: none;
+	border-radius: 30px;
+	padding: 0px;
+	font-size: 20px;
+	color: #fff !important;
+	background: #f85ab6;
+	-webkit-box-shadow: 0px 3px 9px #e27feb;
+	-moz-box-shadow: 0px 3px 9px #e27feb;
+	box-shadow: 0px 3px 9px #e27feb;
+	margin: 40px 72px 0px;
+}
+.book_model_button a:hover{
+	background: #dd2891;
+}
+.Job_title h3 span{
+	font-weight: normal;
+	font-family: 'Avenir', sans-serif;
+}
+/*----------- Book Model Page CSS End ------------*/
+/*----------- Payment Page CSS Start ------------*/
+.payment{
+	max-width: 530px;
+	padding: 0px 15px;
+	margin: 25px auto 30px;
+}
+.payment h2{
+	font-size: 28px;
+	color: #333333;
+	font-family: 'Avenir 85';
+	margin-bottom: 5px;
+}
+.paymentbox{
+	width: 100%;
+}
+.paymenthead{
+	background: rgba(44,206,255,,0.40);
+	background: -moz-linear-gradient(-45deg, rgba(44,206,255,0.40) 0%, rgba(128,103,255,0.40) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,206,255,0.40)), color-stop(100%, rgba(128,103,255,0.40)));
+	background: -webkit-linear-gradient(-45deg, rgba(44,206,255,0.40) 0%, rgba(128,103,255,0.40) 100%);
+	background: -o-linear-gradient(-45deg, rgba(44,206,255,0.40) 0%, rgba(128,103,255,0.40) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(44,206,255,0.40) 0%, rgba(128,103,255,0.40) 100%);
+	background: linear-gradient(135deg, rgba(44,206,255,0.40) 0%, rgba(128,103,255,0.40) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cceff', endColorstr='#8067ff', GradientType=1 );
+	padding: 10px 10px 10px 55px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.paymenthead_left{
+	float: left;
+	margin-top: 2px;
+}
+.paymenthead_left h3{
+	font-size: 14px;
+	font-family: Arial;
+	color: #000000;
+}
+.paymenthead_left p{
+	font-size: 12px;
+	font-family: Arial;
+	color: #9b9b9b;
+}
+.paymenthead_right{
+	float: right;
+	text-align: right;
+	font-size: 0px;
+}
+.paymenthead_right img{
+	margin: 2px 0px 2px 10px;
+	cursor: pointer;
+}
+.paymentBody{
+	border: 1px solid #4a90e2;
+	padding: 25px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.pay_group{
+	margin-bottom: 10px;
+	position: relative;
+}
+.pay_group img{
+	position: absolute;
+	right: 15px;
+	top: 32px;
+	height: 25px;
+	width: auto;
+}
+.pay_group label{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #222222;
+}
+.pay_control{
+	height: 37px;
+	outline: none;
+	border: 1px solid #2ccdff;
+	border-radius: 30px;
+	padding: 0px 15px;
+	width: 100%;
+}
+select.pay_control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url("../images/down.png") no-repeat 90% center;
+}
+.pay_part,.pay_inner{
+    float: left;
+    width: 45%;
+}
+.pay_part .pay_control{
+	border-radius: 5px;
+}
+.pay_part + .pay_part,.pay_inner + .pay_inner{
+	float: right;
+}
+.pay_inner span{
+	padding-top: 33px;
+	display: block;
+	color: #4a4a4a;
+}
+.paypal{
+	border:1px solid #dbdbdb;
+	padding: 15px;
+	margin-top: 35px;
+}
+.paypal_left{
+	float: left;
+}
+.paypal_right{
+	float: right;
+	margin-top: 5px;
+}
+.paypal_info{
+	padding-left: 30px;
+}
+.paypal_info h6{
+	font-family: Arial;
+	font-size: 13px;
+	color: #000000;
+}
+.paypal_info p{
+	font-family: Arial;
+	font-size: 11px;
+	color: #9b9b9b;
+}
+.paypal_left .checkmark {
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    background: transparent;
+    border: 1px solid #010101;
+}
+.paypal_left .container_radio .checkmark::after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+}
+.paypal_left .container_radio {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+}
+.paynow .btn_pink{
+	height: 38px;
+	line-height: 36px;
+	font-size: 20px;
+	min-width: 175px;
+	margin: 40px 0px 10px;
+}
+.payment_more{
+	margin-top: 20px;
+	margin-bottom: 90px;
+}
+.payment_more li{
+	font-size: 16px;
+	color: #06060a;
+	font-style: italic;
+	margin-top: 5px;
+}
+.payment_more .checkmark {
+    height: 20px;
+    width: 20px;
+    top: 1px;
+    background: transparent;
+    border: 1px solid #010101;
+}
+.payment_more .container_radio .checkmark::after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+}
+.payment_more .container_radio {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    padding-left: 28px;
+    margin-top: 15px;
+}
+/*----------- Payment Page CSS End ------------*/
+.job_accept{
+	max-width: 510px;
+	margin: 0 auto;
+}
+.accept_btn .btn_pink{
+	margin: 20px 50px 40px;
+}
+.add_paypal{
+	max-width: 895px;
+	margin: 40px auto;
+}
+.add_paypal h3{
+	font-size: 28px;
+	color: #06060a;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.add_paypal p{
+	font-size: 20px;
+	color: #333333;
+	margin-top: 25px;
+}
+.add_paypal p a{
+	color: #333 !important;
+	font-family: 'Avenir Next';
+	font-weight: bold;
+}
+.add_paypal_form{
+	margin-top: 45px;
+}
+.add_paypal_form label{
+	font-size: 20px;
+	color: #333333;
+	margin-bottom: 0px;
+	float: left;
+	margin-top: 10px;
+}
+.add_email{
+	background: rgba(44,206,255,,0.15);
+	background: -moz-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(44,206,255,0.10)), color-stop(100%, rgba(128,103,255,0.10)));
+	background: -webkit-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -o-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	background: linear-gradient(135deg, rgba(44,206,255,0.10) 0%, rgba(128,103,255,0.10) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2cceff', endColorstr='#8067ff', GradientType=1 );
+	height: 48px;
+	outline: none !important;
+	width: 525px;
+	font-size: 16px;
+	border: 0px;
+	margin-left: 10px;
+	padding: 0px 26px;
+	border-radius: 30px;
+}
+.add_paypal h4{
+	text-align: center;
+	font-size: 23px;
+	color: #333333;
+	margin-top: 65px;
+}
+.add_paypal .btn_pink{
+	min-width: 185px;
+}
+.add_paypal a.btn_pink + a.btn_pink{
+	background: transparent;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	color: #f85ab6 !important;
+}
+.feedback_title h3{
+	font-size: 28px;
+	margin-top: 90px;
+}
+.feedback .form_input{
+	position: relative;
+}
+.rating_outer {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+.rating {
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2ccdff;
+  white-space: nowrap; 
+}
+.rating .star {
+  display: inline-block;
+  position: relative;
+  letter-spacing: 0.05em; 
+}
+.rating .star::before {
+  display: inline-block;
+  color: #2ccdff;
+  content: '☆';
+  line-height: 33px;
+  width: 33px;
+  height: 33px; 
+  font-size: 40px;
+}
+.rating .star::after {
+  display: inline-block;
+  position: absolute;
+  content: '★';
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  line-height: 33px;
+  height: 0;
+  transition: all 0.1s linear;
+  overflow: hidden; 
+  font-size: 40px;
+}
+.rating:not([disabled]) .star:hover::after,
+.rating .star.active::after {
+  opacity: 1;
+  width: 1em;
+  height: 1em; 
+}
+.rating .star.active.half::after {
+ 	width: 0.5em; 
+ }
+.form_input.first .form_control{
+	padding-right: 180px;
+}
+.feedback_radio .container_radio {
+    padding-left: 0px !important;
+    margin-bottom: 0px;
+    font-size: 18px !important;
+    color: #06060a !important;
+    font-weight: normal !important;
+    font-family: 'Avenir', sans-serif !important;
+   	padding-right: 35px;
+}
+.feedback_radio .checkmark {
+    left: auto;
+    right: 0;
+    background: transparent;
+    border: 1px solid #2ccdff;
+}
+.feedback_radio .container_radio input:checked ~ .checkmark {
+    background-color: #2ccdff;
+}
+.feedback_radio .container_radio .checkmark::after {
+    top: 8px;
+    left: 8px;
+}
+.feedback_radio .container_radio + .container_radio{
+	float: none !important;
+	float: right !important;
+}
+.feedback_radio .container_radio + .container_radio{
+	color: #ff2d47 !important;
+}
+.feedback_radio {
+    margin: 20px 0px 35px;
+}
+.client_border{
+	border-width: 4px;
+}
+.client_border img {
+    height: 149px;
+    width: 149px;
+}
+.feedback textarea {
+    height: 155px;
+}
+@media(min-width: 1200px) and (max-width:1350px){
+	.message_info {
+    	width: calc(70% - 57px);
+	}
+}
 @media(min-width: 992px) and (max-width:1199px){
 	/*----------- Login Page CSS Start ------------*/
 	.login_bg {
@@ -1468,6 +2169,9 @@ select.attr_control{
 	}
 	.profile_top_header {
     	max-width: 992;
+	}
+	.message_info {
+    	width: calc(91% - 57px);
 	}
 }
 @media(min-width: 768px) and (max-width:991px){
@@ -1574,6 +2278,90 @@ select.attr_control{
 	}
 	.profile_top_header {
     	max-width: 768px;
+	}
+	.browseModelsList li:first-child {
+    	width: 110px;
+	}
+	.browseModelsList img {
+    	width: 110px;
+    	height: 110px;
+	}
+	.browseModelsList h4 {
+    	font-size: 18px;
+    	margin-top: 9px;
+	}
+	.star-ratings-sprite {
+    	height: 20px;
+    	width: 123px;
+    	margin: 0 auto 10px;
+    	background-size: 25px 43px;
+	}
+	.star-ratings-sprite-rating{
+		background-size: 25px 43px;
+		height: 20px;
+	}
+	.browseModelsList p ,.browseModelsList a{
+    	font-size: 15px;
+	}
+	.browseModelsList::after {
+    	width: 100%;
+    	left: 0px;
+	}
+	.browseModelsList li:nth-child(2) {
+    	width: 265px;
+	}
+	.browseModelsList li:nth-child(3) {
+    	width: 235px;
+	}
+	.browseModelsList li {
+    	height: 100px;
+	}
+	.browse_models {
+    	max-width: 768px;
+	}
+	.add_paypal {
+    	padding: 0px 15px;
+	}
+	.add_paypal h3 {
+    	font-size: 24px;
+	}
+	.add_paypal p {
+    	font-size: 18px;
+	}
+	.add_paypal_form label {
+    	font-size: 18px;
+	}
+	.add_paypal h4 {
+    	font-size: 20px;
+    	margin-bottom: 30px;
+	}
+	.user_message_list li {
+    	height: 72px;
+    	padding: 10px 10px;
+	}
+	.message_info {
+		width: calc(100% - 50px);
+    	margin-left: 10px;
+	}
+	.message_info_inner {
+    	padding: 10px !important;
+    	font-size: 13px !important;
+	}
+	.time {
+		font-size: 12px;
+		position: relative;
+    	top: 0px;
+    	right: auto;
+    	left: 0px !important;
+	}
+	.messagebox li {
+    	margin-bottom: 20px;
+	}
+	.showing_job a {
+    	margin: 35px 50px 30px;
+	}
+	.right_side .message_info {
+    	margin-right: 10px;
 	}
 }
 @media(max-width: 767px){
@@ -2005,6 +2793,209 @@ select.attr_control{
 	}
 	.clientprofile .addPicture {
     	padding-top: 38px;
+	}
+	.browseModelsList {
+    	padding: 20px 0px;
+    	text-align: center;
+	}
+	.browseModelsList li {
+    	float: none;
+    	height: auto;
+    	display: block;
+    	width: 100% !important;
+    	padding: 0px !important;
+	}
+	.browseModelsList img {
+    	width: 100px;
+    	height: 100px;
+    }
+    .browseModelsList h4 {
+    	font-size: 18px;
+    	margin-top: 9px;
+	}
+	.star-ratings-sprite {
+    	height: 20px;
+    	width: 123px;
+    	margin: 0 auto 10px;
+    	background-size: 25px 43px;
+	}
+	.star-ratings-sprite-rating{
+		background-size: 25px 43px;
+		height: 20px;
+	}
+	.browseModelsList p ,.browseModelsList a{
+    	font-size: 15px;
+	}
+	.browseModelsList::after {
+    	width: 100%;
+    	left: 0px;
+	}
+	.select_modal a.select_ok {
+    	margin-left: -35px !important;
+	}
+	.back_btn img {
+    	top: 10px;
+    	left: 15px;
+    	height: 40px;
+    	width: 40px;
+    }
+    .Job_title h3 {
+    	margin-top: 63px;
+    	font-size: 20px;
+    	margin-bottom: 20px;
+	}
+	.showing_job label {
+    	font-size: 15px;
+    	padding-left: 15px;
+	}
+	.showing_job {
+    	margin: 0px auto 10px;
+    }
+    .job_accept {
+    	padding: 0px 15px;
+	}
+	.payment_more li {
+    	font-size: 14px;
+    }
+    .payment_more .container_radio {
+    	font-size: 14px;
+    }
+    .accept_btn .btn_pink {
+    	margin: 20px 10px;
+		width: 120px;
+	}
+	.add_paypal {
+    	margin: 63px auto 20px;
+    	padding: 0px 15px;
+	}
+	.add_paypal h3 {
+    	font-size: 20px;
+    	margin-bottom: 20px;
+	}
+	.add_paypal p {
+    	font-size: 16px;
+    	margin-top: 17px;
+	}
+	.add_paypal_form {
+    	margin-top: 20px;
+	}
+	.add_paypal_form label {
+    	font-size: 17px;
+    	float: none;
+    	margin-top: 0px;
+	}
+	.add_email {
+    	height: 40px;
+    	width: 100%;
+    	font-size: 14px;
+    	margin-left: 0px;
+    	padding: 0px 15px;
+    	margin-top: 5px;
+	}
+	.add_paypal h4 {
+    	font-size: 17px;
+    	margin-top: 25px;
+	}
+	.add_paypal .btn_pink {
+    	min-width: 136px;
+    	font-size: 14px;
+    	margin-top: 25px;
+	}
+	.message_info {
+		width: calc(100% - 50px);
+    	margin-left: 10px;
+	}
+	.message_info_inner {
+    	padding: 10px !important;
+    	font-size: 12px !important;
+	}
+	.time {
+		font-size: 10px;
+		position: relative;
+    	top: 0px;
+    	right: auto;
+    	left: 0px !important;
+	}
+	.messagebox li {
+    	margin-bottom: 20px;
+	}
+	.showing_job a {
+    	margin: 10px 5px 30px;
+	}
+	.book_model_button a {
+    	width: 130px;
+    	font-size: 17px;
+    	margin: 25px 10px 0px;
+	}
+	.right_side .message_info {
+    	margin-right: 10px;
+	}
+	.rating .star::before {
+    	line-height: 23px;
+    	width: 23px;
+    	height: 23px;
+    	font-size: 27px;
+	}
+	.rating .star::after {
+    	line-height: 23px;
+    	font-size: 27px;
+	}
+	.form_input.first .form_control {
+    	padding-right: 133px;
+	}
+	.feedback_radio {
+    	margin: 4px 0px 20px;
+	}
+	.feedback_radio .container_radio {
+    	font-size: 14px !important;
+	}
+	.reserch_job_list h3 {
+    	font-size: 18px;
+    	line-height: 30px;
+    	margin-bottom: 32px;
+	}
+	.payment {
+    	margin: 63px auto 30px;
+	}
+	.payment h2 {
+    	font-size: 18px;
+	}
+	.paymenthead {
+    	padding: 10px;
+    }
+    .paymenthead_left h3 {
+    	font-size: 13px;
+	}
+	.paymenthead_left p {
+    	font-size: 11px;
+	}
+	.paymenthead_right img {
+    	margin: 8px 0px 2px 5px;
+    	width: 36px;
+	}
+	.paymentBody {
+    	padding: 10px;
+	}
+	.input_img .pay_control{
+		padding-right: 70px;
+	}
+	.pay_part{
+    	float: none;
+    	width: 100%;
+    	margin-bottom: 15px;
+	}
+	.paypal {
+    	padding: 10px;
+    	margin-top: 0px;
+	}
+	.paynow .btn_pink {
+    	margin: 25px 0px 10px;
+	}
+	.payment_more {
+    	margin-bottom: 60px;
+	}
+	.client_border {
+    	border-width: 2px;
 	}
 }
 @media(max-width: 480px){
