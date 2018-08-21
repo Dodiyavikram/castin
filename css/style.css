@@ -1440,7 +1440,7 @@ select.attr_control{
 	max-width: 1020px;
 	padding: 0px 15px;
 	margin: 0px auto;
-	min-height: 800px;
+	min-height: 550px;
 }
 .browseModelsList{
 	padding: 35px 0px 22px;
@@ -1520,22 +1520,30 @@ select.attr_control{
 .select_modal a.select_ok{
 	margin-left: -70px !important;
 }
+.viewacceptjob_outer{
+	max-width: 1200px;
+}
 .viewacceptjob li:nth-child(2){
-	width: 250px;
+	width: 295px;
 }
 .viewacceptjob li:nth-child(3){
-	width: 250px;
+	width: 290px;
 }
 .viewacceptjob li:nth-child(4){
-	width: 170px;
+	width: 200px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 .viewacceptjob li:nth-child(5){
-	width: 165px;
+	width: 229px;
+}
+.viewacceptjob li:nth-child(5) a{
+	margin-top: 0px;
+	font-size: 13px;
+	width: 110px;
 }
 .viewacceptjob li:nth-child(5) a + a{
-	margin-left: 15px;
+	margin-left: 5px;
 }
 /*----------- Browse Models Job Page CSS End ------------*/
 /*----------- Message Page CSS Start ------------*/
@@ -2210,6 +2218,16 @@ select.pay_control {
 	.viewacceptjob li:nth-child(3) {
     	width: 240px;
 	}
+	.viewacceptjob li:nth-child(5) {
+    	width: 157px;
+	}
+	.viewacceptjob li:nth-child(5) a + a {
+	    margin-left: 0px;
+	    margin-top: 5px;
+	}
+	.viewacceptjob_outer {
+    	max-width: 992px;
+	}
 }
 @media(min-width: 768px) and (max-width:991px){
 	.signup_outer h2 {
@@ -2365,6 +2383,10 @@ select.pay_control {
 	}
 	.viewacceptjob p, .viewacceptjob a {
     	font-size: 14px;
+	}
+	.viewacceptjob li:nth-child(5) a + a {
+	    margin-left: 0px;
+	    margin-top: 5px;
 	}
 	.browseModelsList li {
     	height: 100px;
@@ -3194,5 +3216,8 @@ select.pay_control {
     	width: 140px;
 		margin: 30px 1px 0px;
 		font-size: 14px;
+	}
+	.profile .back_btn.mar_25{
+		height: 25px;
 	}
 }
