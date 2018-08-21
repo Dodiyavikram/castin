@@ -1510,8 +1510,8 @@ select.attr_control{
 .browseModelsList a{
 	font-family: 'Avenir 85';
 	margin-top: 0px;
-	font-size: 13px;
-	width: 110px;
+	font-size: 16px;
+	width: 150px;
 }
 .select_modal a{
 	margin: 15px 10px 0px !important;
@@ -1522,26 +1522,26 @@ select.attr_control{
 	margin-left: -70px !important;
 }
 .viewacceptjob_outer{
-	max-width: 1200px;
+	max-width: 1220px;
 }
 .viewacceptjob li:nth-child(2){
-	width: 295px;
-}
-.viewacceptjob li:nth-child(3){
 	width: 290px;
 }
+.viewacceptjob li:nth-child(3){
+	width: 280px;
+}
 .viewacceptjob li:nth-child(4){
-	width: 200px;
+	width: 190px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 .viewacceptjob li:nth-child(5){
-	width: 229px;
+	width: 275px;
 }
 .viewacceptjob li:nth-child(5) a{
 	margin-top: 0px;
-	font-size: 13px;
-	width: 110px;
+	font-size: 16px;
+	width: 133px;
 }
 .viewacceptjob li:nth-child(5) a + a{
 	margin-left: 5px;
@@ -2367,7 +2367,7 @@ select.pay_control {
     	width: 265px;
 	}
 	.browseModelsList li:nth-child(3) {
-    	width: 235px;
+    	width: 212px;
 	}
 	.viewacceptjob li:nth-child(2) {
     	width: 190px;
@@ -2908,6 +2908,8 @@ select.pay_control {
     	margin: 5px 0px;
 	}
 	.viewacceptjob a{
+		font-size: 14px !important;
+		width: 123px !important;
     	margin: 0px 10px !important;
 	}
 	.browseModelsList::after {
