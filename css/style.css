@@ -2223,6 +2223,14 @@ select.pay_control {
 	font-size: 16px;
 	width: 160px;
 }
+.acpt{
+	text-align: center;
+}
+.acpt .attr_control{
+	margin: 10px auto 30px !important;
+	border: 1px solid #843cf6;
+	width: 120px !important;
+}
 @media(min-width: 1200px) and (max-width:1350px){
 	.message_info {
     	width: calc(70% - 57px);
